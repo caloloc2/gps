@@ -1,6 +1,6 @@
 <?php
 
-$respuesta['estado'] = false;
+//$respuesta['estado'] = false;
 
 try{
     require 'meta.php';
@@ -11,10 +11,10 @@ try{
         $respuesta['datos'] = $dato;    
     }
 
-    $respuesta['estado'] = true;
+    //$respuesta['estado'] = true;
 
 }catch(Exception $e){
-    $respuesta['error'] = $e->getMessage();
+    //$respuesta['error'] = $e->getMessage();
 }
 
 echo json_encode($respuesta);
