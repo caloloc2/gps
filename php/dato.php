@@ -9,6 +9,7 @@ try{
 
     if (count($dato)>0){
         $respuesta['datos'] = $dato;
+        $respuesta['estado'] = true;
     }
 }catch(Exception $e){
     $respuesta['error'] = $e->getMessage();
