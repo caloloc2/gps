@@ -11,7 +11,7 @@ try{
         $respuesta['datos'] = $dato;
     }
 }catch(Exception $e){
-    $respuesta['error'] => $e->getMessage();
+    $respuesta['error'] = $e->getMessage();
 }
 
 echo json_encode($respuesta);
